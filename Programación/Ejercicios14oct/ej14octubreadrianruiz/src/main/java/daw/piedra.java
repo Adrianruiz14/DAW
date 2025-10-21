@@ -88,6 +88,8 @@ public class piedra {
             }
 
         } while (eleccionrandom == eleccion || eleccion == eleccionrandom);
+ 
 
+        
     }
 }
