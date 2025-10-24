@@ -114,7 +114,7 @@ public class nscomollamarlo {
 
                             }
 
-                        } while (eleccion > 3 || eleccion < 0);
+                        } while (eleccionp > 3 || eleccionp < 0);
 
                         Random rand2 = new Random();
                         eleccionrandom = rand2.nextInt(3);
@@ -132,7 +132,7 @@ public class nscomollamarlo {
                         if (eleccionrandom == eleccionp) {
                             System.out.println("Empate");
                         }
-                        if (eleccion == eleccionrandom) {
+                        if (eleccionp == eleccionrandom) {
                             System.out.println("Empate");
                         }
 

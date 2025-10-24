@@ -4,7 +4,33 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class Juegos {
+
+    public static int Opciones() {   //PREGUNTAR AL PROFESOR INT OPCIONES, RETURN ELECCION
+
+        int eleccion = 0;
+
+        do {
+            try {
+
+                String texto = """
+                    ¿Qué quieres hacer?
+                    1. Pares o Nones
+                    2. Piedra-Papel-Tijera
+                    3. Salir
+                    """;
+           
+            eleccion = Integer.parseInt(JOptionPane.showInputDialog(texto));
+
+            } catch (NumberFormatException nfe) {
+                            System.out.println("Pon un maldito numero"); 
+                         } 
+
+              }  while (!(eleccion > 0 )); return eleccion;
+        
+    }
 
     public static void parImpar(int memuero, int memuero2) {
 
@@ -63,4 +89,88 @@ public class Juegos {
 
     }
 
+    public static void PiedraPapel(int memato, int memato2) {
+
+         String texto2 = """
+                            Indica con qué vas a jugar:
+                            1 Piedra
+                            2 Papel
+                            3 Tijera
+                            """;
+
+                    int eleccionp = 0;
+                    int eleccionrandom = 0;
+
+                    do {
+
+                        do {
+
+                            try {
+                                eleccionp = Integer.parseInt(JOptionPane.showInputDialog(texto2));
+
+                            } catch (NumberFormatException nfe) {
+                                System.out.println("No es un número, elige solo entre 1-2-3");
+                            }
+
+                            if (eleccionp == 1) {
+                                System.out.println("Elegiste la piedra");
+                            }
+                            if (eleccionp == 2) {
+                                System.out.println("Elegiste el papel");
+                            }
+                            if (eleccionp == 3) {
+                                System.out.println("Elegiste la tijera ");
+
+                            }
+
+                        } while (eleccionp > 3 || eleccionp < 0);
+
+                        Random rand2 = new Random();
+                        eleccionrandom = rand2.nextInt(3);
+
+                        if (eleccionrandom == 1) {
+                            System.out.println("Tu rival escogió la piedra");
+                        }
+                        if (eleccionrandom == 2) {
+                            System.out.println("Tu rival escogió el papel");
+                        }
+                        if (eleccionrandom == 3) {
+                            System.out.println("Tu rival escogió la tijera ");
+                        }
+
+                        if (eleccionrandom == eleccionp) {
+                            System.out.println("Empate");
+                        }
+                        if (eleccionp == eleccionrandom) {
+                            System.out.println("Empate");
+                        }
+
+                        if (eleccionrandom == 2 && eleccionp == 1) {
+                            System.out.println("Gana la maquina");
+
+                        }
+                        if (eleccionrandom == 1 && eleccionp == 2) {
+                            System.out.println("Ganas tú");
+
+                        }
+                        if (eleccionrandom == 3 && eleccionp == 1) {
+                            System.out.println("Ganas tú");
+
+                        }
+                        if (eleccionrandom == 1 && eleccionp == 3) {
+                            System.out.println("Gana la maquina");
+
+                        }
+                        if (eleccionrandom == 2 && eleccionp == 3) {
+                            System.out.println("Ganas tú");
+
+                        }
+                        if (eleccionrandom == 3 && eleccionp == 2) {
+                            System.out.println("Gana la maquina");
+
+                        }
+
+                    } while (eleccionrandom == eleccionp || eleccionp == eleccionrandom);
+
+}
 }
