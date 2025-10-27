@@ -35,7 +35,7 @@ public class PrácticaCasa {
                  3 Multiplicar
                  4 Dividir
                  
-                 """;
+                 """; 
         String opciones1 = JOptionPane.showInputDialog(texto);
         int opciones = Integer.parseInt(opciones1);
 

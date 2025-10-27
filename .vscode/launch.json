@@ -1,0 +1,210 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "AdrianRuiz",
+            "request": "launch",
+            "mainClass": "t3aadrianruiz.AdrianRuiz",
+            "projectName": "adrianruiz"
+        },
+        {
+            "type": "java",
+            "name": "Bucle",
+            "request": "launch",
+            "mainClass": "t3aadrianruiz.Bucle",
+            "projectName": "adrianruiz"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio",
+            "request": "launch",
+            "mainClass": "t3aadrianruiz.Ejercicio",
+            "projectName": "adrianruiz"
+        },
+        {
+            "type": "java",
+            "name": "EjercicioBucle",
+            "request": "launch",
+            "mainClass": "t3aadrianruiz.EjercicioBucle",
+            "projectName": "adrianruiz"
+        },
+        {
+            "type": "java",
+            "name": "IMC",
+            "request": "launch",
+            "mainClass": "t3aadrianruiz.IMC",
+            "projectName": "adrianruiz"
+        },
+        {
+            "type": "java",
+            "name": "ParteA",
+            "request": "launch",
+            "mainClass": "p21adrianruiz.ParteA",
+            "projectName": "adrian"
+        },
+        {
+            "type": "java",
+            "name": "ParteB",
+            "request": "launch",
+            "mainClass": "p21adrianruiz.ParteB",
+            "projectName": "adrian"
+        },
+        {
+            "type": "java",
+            "name": "Expresiones",
+            "request": "launch",
+            "mainClass": "daw.Expresiones",
+            "projectName": "daw"
+        },
+        {
+            "type": "java",
+            "name": "Cuadro",
+            "request": "launch",
+            "mainClass": "daw.Cuadro",
+            "projectName": "ej14octubreadrianruiz"
+        },
+        {
+            "type": "java",
+            "name": "Día1",
+            "request": "launch",
+            "mainClass": "daw.Día1",
+            "projectName": "ej14octubreadrianruiz"
+        },
+        {
+            "type": "java",
+            "name": "Día2",
+            "request": "launch",
+            "mainClass": "daw.Día2",
+            "projectName": "ej14octubreadrianruiz"
+        },
+        {
+            "type": "java",
+            "name": "Día3",
+            "request": "launch",
+            "mainClass": "daw.Día3",
+            "projectName": "ej14octubreadrianruiz"
+        },
+        {
+            "type": "java",
+            "name": "Día4",
+            "request": "launch",
+            "mainClass": "daw.Día4",
+            "projectName": "ej14octubreadrianruiz"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio(1)",
+            "request": "launch",
+            "mainClass": "daw.Ejercicio",
+            "projectName": "ej14octubreadrianruiz"
+        },
+        {
+            "type": "java",
+            "name": "IMC(1)",
+            "request": "launch",
+            "mainClass": "daw.IMC",
+            "projectName": "ej14octubreadrianruiz"
+        },
+        {
+            "type": "java",
+            "name": "hola",
+            "request": "launch",
+            "mainClass": "daw.hola",
+            "projectName": "ej14octubreadrianruiz"
+        },
+        {
+            "type": "java",
+            "name": "RANDOM",
+            "request": "launch",
+            "mainClass": "daw.RANDOM",
+            "projectName": "ej31oct"
+        },
+        {
+            "type": "java",
+            "name": "nscomollamarlo",
+            "request": "launch",
+            "mainClass": "daw.nscomollamarlo",
+            "projectName": "ej31oct"
+        },
+        {
+            "type": "java",
+            "name": "piedra",
+            "request": "launch",
+            "mainClass": "daw.piedra",
+            "projectName": "ej31oct"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "daw.Main",
+            "projectName": "ejercciioclase"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio1",
+            "request": "launch",
+            "mainClass": "memuero.Ejercicio1",
+            "projectName": "memuero"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio2",
+            "request": "launch",
+            "mainClass": "memuero.Ejercicio2",
+            "projectName": "memuero"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio3",
+            "request": "launch",
+            "mainClass": "memuero.Ejercicio3",
+            "projectName": "memuero"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio4",
+            "request": "launch",
+            "mainClass": "memuero.Ejercicio4",
+            "projectName": "memuero"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio5",
+            "request": "launch",
+            "mainClass": "memuero.Ejercicio5",
+            "projectName": "memuero"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "paquete.Main",
+            "projectName": "unidad3"
+        },
+        {
+            "type": "java",
+            "name": "PrácticaCasa",
+            "request": "launch",
+            "mainClass": "paquete.PrácticaIF.PrácticaCasa",
+            "projectName": "unidad3"
+        },
+        {
+            "type": "java",
+            "name": "PrácticaIFELSE",
+            "request": "launch",
+            "mainClass": "paquete.PrácticaIF.PrácticaIFELSE",
+            "projectName": "unidad3"
+        }
+    ]
+}
