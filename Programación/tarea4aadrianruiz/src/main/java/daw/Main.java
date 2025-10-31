@@ -78,9 +78,11 @@ public class Main {
         // Dentro de la casa;
 
         switch (decision) {
-            case "puerta":
+            case "puerta": // Si entraste por la puerta...
                 String eleccion1 = "";
                 String Salon = "Salon";
+                String salon = "salon";
+                String biblioteca = "biblioteca";
                 String Biblioteca = "Biblioteca";
                 JOptionPane.showMessageDialog(null,
                         "Estas dentro la casa y ves 2 habitaciones, una biblioteca y un salon");
@@ -88,28 +90,62 @@ public class Main {
                 do {
                     eleccion1 = JOptionPane.showInputDialog("¿Cual eliges? (Salon/Biblioteca)");
 
-                } while (!(eleccion1.equalsIgnoreCase(Salon) || eleccion1.equalsIgnoreCase(Biblioteca)));
+                } while (!(eleccion1.equalsIgnoreCase(Salon) || eleccion1.equalsIgnoreCase(Biblioteca)
+                        || eleccion1.equalsIgnoreCase(salon) || eleccion1.equalsIgnoreCase(biblioteca)));
+
+                switch (eleccion1) {
+                    case "Salon": // Dentro del Salon
+
+                        JOptionPane.showMessageDialog(null, "Entraste al Salon y ves una ventana abierta...");
+                        Random escapasion = new Random();
+                        int escapasion1 = escapasion.nextInt(1, 3);
+
+                        if (escapasion1 == 1) {
+                            JOptionPane.showMessageDialog(null, "Llegas a la ventana y escapaste con éxito");
+
+                        } else {
+                            JOptionPane.showMessageDialog(null,
+                                    "Intentas llegar a la ventana pero el espíritu Paco se te aparece para jugar a un juego contigo...");
+                            // AÑADIR AQUÍ EL JUEGO
+                        }
+
+                        break;
+
+                    case "Biblioteca": // Dentro de la Biblioteca
+
+                        JOptionPane.showMessageDialog(null, "Entraste a la Biblioteca y ves una ventana abierta...");
+                        Random escapasionbiblioteca = new Random();
+                        int escapasion2 = escapasionbiblioteca.nextInt(1, 3);
+
+                        if (escapasion2 == 1) {
+                            JOptionPane.showMessageDialog(null, "Llegas a la ventana y escapaste con éxito");
+
+                        } else {
+                            JOptionPane.showMessageDialog(null,
+                                    "Intentas llegar a la ventana pero el espíritu Paco se te aparece para jugar a un juego contigo...");
+                            // AÑADIR AQUÍ EL JUEGO
+                        }
+
+                        break;
+                }
 
                 break;
 
-            case "ventana":
-             String eleccion2 = "";
+            case "ventana": // Si entraste por la ventana...
+                String eleccion2 = "";
                 String Despensa = "Despensa";
                 String Pasillo = "Pasillo";
                 JOptionPane.showMessageDialog(null,
                         "Estas dentro la casa y ves 2 habitaciones, una bdespensa y un pasillo");
 
                 do {
-                    eleccion1 = JOptionPane.showInputDialog("¿Cual eliges? (Despensa/Pasillo)");
+                    eleccion2 = JOptionPane.showInputDialog("¿Cual eliges? (Despensa/Pasillo)");
 
                 } while (!(eleccion2.equalsIgnoreCase(Despensa) || eleccion2.equalsIgnoreCase(Pasillo)));
 
-            default:
                 break;
         }
 
-      
- 
     }
 
 }
